@@ -3,6 +3,7 @@
 # Set the container name and image name
 CONTAINER_NAME="my-container"
 IMAGE_NAME="node-docker"
+HOST_PORT=3000
 
 # Check if the container is running
 if [ "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then
@@ -16,6 +17,6 @@ else
     else
         # Run a new container if it doesn't exist
         echo "Container '$CONTAINER_NAME' does not exist. Creating and starting..."
-        docker run -d -p 3000:3000 --name $CONTAINER_NAME $IMAGE_NAME
+        docker run -d -p $HOST_PORT:3000 --name $CONTAINER_NAME $IMAGE_NAME
     fi
 fi
