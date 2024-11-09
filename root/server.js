@@ -18,7 +18,6 @@ app.get("/getInfo", (req,res) => {
         res.send("unchanged")
         used = true
     }
-    
 })
 
 app.listen(3000, () => {
