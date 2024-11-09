@@ -6,7 +6,7 @@
     <body>
         <h1>Hello</h1>
         <!--The post requ is going to the server.js routes it is easy to see what is happening there-->
-        <button hx-post="\getInfo" hx-swap="innerHTML">
+        <button id="toggleButton" hx-target="#toggleButton" hx-get="\getInfo" hx-swap="innerHTML">
             hello click to change me
         </button>
     </body>
