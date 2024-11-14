@@ -17,7 +17,7 @@ app.get("/", (req,res) => {
     res.sendFile(__dirname + "/public/index.html");
 })
 
-app.post("/getInfo", (req,res) => {
+app.post("/upload", (req,res) => {
     let input = req.body.input
     addNewImage.run(input);
     var rows = getAllImages.all().reverse();
@@ -38,7 +38,7 @@ app.get("/getImages", (req,res) => {
 
     for (let row of rows){
         let url = row.IMG_URL;
-        html += `<img src='${url}'/>`;
+        html += `<img class='inline-block' src='${url}'/>`;
     }
     res.send(html)
 })
