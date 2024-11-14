@@ -16,22 +16,12 @@
 
     <!-- "horizontal" layout -->
     <div class="flex items-center gap-8">
-        <!-- og button -->
-        <div class="flex items-center gap-4">
-            <h2 class="text-xl">Toggle Text:</h2>
-            <div
-                hx-get="/getInfo"
-                hx-trigger="click"
-                hx-swap="innerHTML"
-                class="cursor-pointer p-2 bg-blue-100 rounded">
-                hello click to change me
-            </div>
-        </div>
+
 
         <!-- file or url upload -->
         <div class="flex items-center gap-4">
             <h2 class="text-xl">File or URL:</h2>
-            <form hx-post="/upload" hx-encoding="multipart/form-data" class="flex items-center gap-2">
+            <form hx-post="/upload" hx-swap="innerHTML" hx-target="#images" hx-encoding="application/x-www-form-urlencoded" class="flex items-center gap-2">
                 <label class="px-4 py-2 bg-gray-100 rounded cursor-pointer hover:bg-gray-200">
                     Browse
                     <input type="file" name="file" class="hidden">
@@ -40,6 +30,7 @@
                 <input 
                     type="text" 
                     name="url" 
+                    id="URL"
                     placeholder="Enter URL" 
                     class="border p-1 rounded">
                 <button
@@ -52,7 +43,7 @@
         </div>
     </div>
 
-    <div class="inline-block" id="images" hx-trigger="load" hx-get="/getImages"></div>
+    <div class="inline-block" id="images" hx-trigger="load" hx-get="/getImages" hx-swap="innerHTML"></div>
 </body>
 
 

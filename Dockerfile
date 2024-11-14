@@ -1,20 +1,19 @@
-FROM node:12.18.1
- 
+FROM node:20
+
 WORKDIR /app
 
-# Install SQLite and build tools
+# Install dependencies
 RUN apt-get update && apt-get install -y \
     sqlite3 \
     libsqlite3-dev \
     build-essential \
-    python
+    python3
 
- 
-COPY package.json package.json
-COPY package-lock.json package-lock.json
- 
+# Copy package files and install dependencies
+COPY package*.json ./
 RUN npm install
- 
+
+# Copy application code
 COPY . .
- 
+
 CMD [ "npm", "run", "start" ]

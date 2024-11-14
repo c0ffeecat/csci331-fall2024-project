@@ -8,6 +8,8 @@ const db = new Database(dbPath)
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());//req.body
+// Serve static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 const addNewImage = db.prepare("INSERT INTO IMAGES (IMG_URL) VALUES (?)");
 const getAllImages = db.prepare("SELECT * FROM IMAGES");
@@ -18,16 +20,16 @@ app.get("/", (req,res) => {
 })
 
 app.post("/upload", (req,res) => {
-    let input = req.body.input
+    let input = req.body.url
     addNewImage.run(input);
     var rows = getAllImages.all().reverse();
     var html = "";
 
     for (let row of rows){
         let url = row.IMG_URL;
-        html += `<img src='${url}'/>`;
+
+        html += `<img class='inline-block' src='${url}'/>`;
     }
-    console.log(html)
     res.send(html)
     
 })
@@ -38,6 +40,7 @@ app.get("/getImages", (req,res) => {
 
     for (let row of rows){
         let url = row.IMG_URL;
+
         html += `<img class='inline-block' src='${url}'/>`;
     }
     res.send(html)
