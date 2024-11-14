@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-
-    <body>
-        <h1>Hello</h1>
-        <!--The post requ is going to the server.js routes it is easy to see what is happening there-->
-        <form hx-post="/getInfo" hx-target="#images" hx-swap="innerHTML">
-            <input name="input" type="text" id="input" value=""/>
-            <button type="submit">
-                submit
-            </button>
-        </form>
-
-        <form>
-            <label for="fileupload">Select a file to upload</label>
-            <input type="file" id="fileupload">
-            <input type="submit" value="Submit">
-        </form>
-        <div id="images" hx-get="/getImages" hx-swap="innerHTML" hx-trigger="load"></div>
-        
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 331 Project</title>
     
-    <script>
-        document.body.addEventListener('htmx:afterRequest', function(event) {
-            document.getElementById('input').value = '';
-        });
-    </script>
+    <!-- HTMX !! -->
+    <script src="https://unpkg.com/htmx.org@1.9.9"></script>
+    
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4">
+    <h1 class="text-2xl mb-4">CSCI 331 Project</h1>
+
+    <!-- "horizontal" layout -->
+    <div class="flex items-center gap-8">
+        <!-- og button -->
+        <div class="flex items-center gap-4">
+            <h2 class="text-xl">Toggle Text:</h2>
+            <div
+                hx-get="/getInfo"
+                hx-trigger="click"
+                hx-swap="innerHTML"
+                class="cursor-pointer p-2 bg-blue-100 rounded">
+                hello click to change me
+            </div>
+        </div>
+
+        <!-- file or url upload -->
+        <div class="flex items-center gap-4">
+            <h2 class="text-xl">File or URL:</h2>
+            <form hx-post="/upload" hx-encoding="multipart/form-data" class="flex items-center gap-2">
+                <label class="px-4 py-2 bg-gray-100 rounded cursor-pointer hover:bg-gray-200">
+                    Browse
+                    <input type="file" name="file" class="hidden">
+                </label>
+                <span class="text-gray-500">or</span>
+                <input 
+                    type="text" 
+                    name="url" 
+                    placeholder="Enter URL" 
+                    class="border p-1 rounded">
+                <button
+                    type="submit"
+                    class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Upload
+                </button>
+            </form>
+            <div id="upload-status"></div>
+        </div>
+    </div>
+</body>
 </html>
