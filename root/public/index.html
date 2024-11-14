@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<head>
-    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
-</head>
 <html>
+<head>
+    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
     <body>
         <h1>Hello</h1>
         <!--The post requ is going to the server.js routes it is easy to see what is happening there-->
-        <button id="toggleButton" hx-target="#toggleButton" hx-get="\getInfo" hx-swap="innerHTML">
-            hello click to change me
-        </button>
+        <form hx-post="/getInfo" hx-target="#images" hx-swap="innerHTML">
+            <input name="input" type="text" id="input" value=""/>
+            <button type="submit">
+                submit
+            </button>
+        </form>
+
+        <form>
+            <label for="fileupload">Select a file to upload</label>
+            <input type="file" id="fileupload">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="images" hx-get="/getImages" hx-swap="innerHTML" hx-trigger="load"></div>
+        
     </body>
-    <form>
-        <label for="fileupload">Select a file to upload</label>
-        <input type="file" id="fileupload">
-        <input type="submit" value="Submit">
-    </form>
+    
+    <script>
+        document.body.addEventListener('htmx:afterRequest', function(event) {
+            document.getElementById('input').value = '';
+        });
+    </script>
 </html>
