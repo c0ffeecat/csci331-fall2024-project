@@ -3,7 +3,7 @@
 # Set the container name and image name
 CONTAINER_NAME="my-container"
 IMAGE_NAME="node-container"
-HOST_PORT=3000
+HOST_PORT=3036
 
 # Build the Docker image
 echo "Building the Docker image..."
@@ -20,4 +20,4 @@ fi
 
 # Run a new container with the latest image
 echo "Creating and starting a new container from the latest image..."
-docker run -d -p $HOST_PORT:3000 --name $CONTAINER_NAME $IMAGE_NAME
+docker run -d -p $HOST_PORT:3036 --name $CONTAINER_NAME $IMAGE_NAME
