@@ -21,10 +21,10 @@
         <!-- file or url upload -->
         <div class="flex items-center gap-4">
             <h2 class="text-xl">File or URL:</h2>
-            <form hx-post="/upload" hx-swap="innerHTML" hx-target="#images" hx-encoding="application/x-www-form-urlencoded" class="flex items-center gap-2">
+            <form hx-post="/upload" hx-swap="innerHTML" hx-target="#images" enctype="multipart/form-data" >
                 <label class="px-4 py-2 bg-gray-100 rounded cursor-pointer hover:bg-gray-200">
                     Browse
-                    <input type="file" name="file" class="hidden">
+                    <input type="file" name="file" accept="image/png" class="hidden">
                 </label>
                 <span class="text-gray-500">or</span>
                 <input 
