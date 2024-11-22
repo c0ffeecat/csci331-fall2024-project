@@ -70,6 +70,6 @@ app.get("/getImages", (req,res) => {
     res.send(html)
 })
 
-app.listen(3036, () => {
+app.listen(3036,'0.0.0.0', () => {
     console.log("server has begun");
 })

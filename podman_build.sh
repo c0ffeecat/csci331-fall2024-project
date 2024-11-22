@@ -1,2 +1,2 @@
 #!/bin/bash
-podman build --tag node-container .
+podman build --tag csci331 .

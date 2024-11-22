@@ -2,7 +2,7 @@
 
 # Set the container name and image name
 CONTAINER_NAME="my-container"
-IMAGE_NAME="node-container"
+IMAGE_NAME="csci331"
 HOST_PORT=3036
 
 # Build the Docker image

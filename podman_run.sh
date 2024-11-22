@@ -2,12 +2,9 @@
 
 # Set the container name and image name
 CONTAINER_NAME="my-container"
-IMAGE_NAME="node-container"
+IMAGE_NAME="csci331"
 HOST_PORT=3036
 
-# Build the Podman image
-echo "Building the Podman image..."
-podman build -t $IMAGE_NAME .
 
 # Check if the container exists (running or stopped)
 if podman ps -a --format "{{.Names}}" | grep -q "^$CONTAINER_NAME$"; then

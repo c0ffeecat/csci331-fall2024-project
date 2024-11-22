@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build --tag node-container .
+docker build --tag aidankeefe/csci331 .
