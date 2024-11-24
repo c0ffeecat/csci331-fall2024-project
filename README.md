@@ -7,12 +7,12 @@ This code is for a website which can be compiled into a Dockerimage from the Doc
 ## STRUCTURE 
 
 The website uses several files, but mainly the following:
-'server.js' - The Node.js server which uses Express to handle HTTP requests and interacts with the SQLite database
-'Dockerfile' - The file which is used to build the Docker image, which contains everything to run the website
-'build_container.sh' - A shell script to run all terminal commands to build the Docker image from the Dockerfile and then run it
-'run_container.sh" - A shell script to run an already built Docker image
-'index.html' - The frontend file which uses HTMX to dynamically load and display images without needing to fully reload the page
-'images.db' - The SQLite database file that stores all images in the database
+\n'server.js' - The Node.js server which uses Express to handle HTTP requests and interacts with the SQLite database
+\n'Dockerfile' - The file which is used to build the Docker image, which contains everything to run the website
+\n'build_container.sh' - A shell script to run all terminal commands to build the Docker image from the Dockerfile and then run it
+\n'run_container.sh" - A shell script to run an already built Docker image
+\n'index.html' - The frontend file which uses HTMX to dynamically load and display images without needing to fully reload the page
+\n'images.db' - The SQLite database file that stores all images in the database
 
 ## DOCKER 
 
