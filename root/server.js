@@ -41,7 +41,7 @@ app.post("/upload", upload.single("file"),(req,res) => {
     let image = req.file
     if (!input && image){
         input = "images/" + image.filename
-    }else if(!image){
+    }else if(!image && !input){
         res.send("<p>Error uploading<p/>")
         return
     }
