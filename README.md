@@ -16,7 +16,7 @@ SQL/SQLite - Used to host the images on the server <br>
 
 ## RELEVANT LINKS
 
-Website hosted on school server -  <br>
+Website hosted via Render - https://csci331-fall2024-project.onrender.com/ <br>
 GitHub Repository - https://github.com/c0ffeecat/csci331-fall2024-project/tree/main <br>
 Google Slideshow - https://docs.google.com/presentation/d/13_D7vHj8hXmilwd302EJhkiSeTwmlbxr8-CkZfrrQLA/edit?usp=sharing
 
@@ -32,7 +32,7 @@ The website uses several files, but mainly the following:<br>
 
 ## CREATIVE OBJECTIVE
 
-Our objective was to create a website to which images could easily be uploaded and kept, and displayed on the site in order of upload. We wanted it to be able to handle both URL and direct file uploads. We also wanted it to be able to dynamically update rather than re-rendering the page, hence usage of HTMX.
+Our objective was to create a website to which images could easily be uploaded and kept, and displayed on the site in order of upload. We wanted it to be able to handle both URL and direct file uploads. We also wanted it to be able to dynamically update rather than re-rendering the page, hence usage of HTMX. 
 
 ## TECH SUMMARY - OVERVIEW
 
@@ -56,7 +56,7 @@ SQL is Structured Query Language, the language which accesses and manipulates da
 
 ## GRAHAM BORIS
 
-My main contributions to the website came from the documentation and the slideshow. My Linux laptop is 32-bit, meaning it does not support Docker, and I was unable to get Docker to work on my Windows 11 Desktop machine after about 6 hours of troubleshooting. I also assisted in the brainstorming session when we first met as a group, but my main contribution came from working on the majority of the slideshow and documentation for our website. If I were to do a project like this again, I would make sure that whatever software the group was going to use was compatible with my machine prior to signing up for a group, but regrettably with this project I was naive and assumed the issue could be resolved, and when I realized it seemed unreasonable to try to join another group so late in the project.
+My main contributions to the website came from the documentation and the slideshow. My Linux laptop is 32-bit, meaning it does not support Docker, and I was unable to get Docker to work on my Windows 11 Desktop machine after about 6 hours of troubleshooting. I also assisted in the brainstorming session when we first met as a group, but my main contribution came from working on the majority of the slideshow and documentation for our website. I also handled getting the website working on Render. If I were to do a project like this again, I would make sure that whatever software the group was going to use was compatible with my machine prior to signing up for a group, but regrettably with this project I was naive and assumed the issue could be resolved, and when I realized it seemed unreasonable to try to join another group so late in the project.
 
 ## AIDAN KEEFE
 
