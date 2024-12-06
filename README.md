@@ -57,10 +57,11 @@ SQL is Structured Query Language, the language which accesses and manipulates da
 
 ## GRAHAM BORIS
 
-My main contributions to the website came from the documentation and the slideshow. My Linux laptop is 32-bit, meaning it does not support Docker, and I was unable to get Docker to work on my Windows 11 Desktop machine after about 6 hours of troubleshooting. I also assisted in the brainstorming session when we first met as a group, but my main contribution came from working on the majority of the slideshow and documentation for our website. I also handled getting the website working on Render. If I were to do a project like this again, I would make sure that whatever software the group was going to use was compatible with my machine prior to signing up for a group, but regrettably with this project I was naive and assumed the issue could be resolved, and when I realized it seemed unreasonable to try to join another group so late in the project.
+My main contributions to the website came from the documentation and the slideshow. My Linux laptop is 32-bit, meaning it does not support Docker, and I was unable to get Docker to work on my Windows 11 Desktop machine after about 6 hours of troubleshooting. I also assisted in the brainstorming session when we first met as a group, but my main contribution came from working on the majority of the slideshow and documentation for our website. I also handled getting the website working on Render. If I were to do a project like this again, I would make sure that whatever software the group was going to use was compatible with my machine prior to signing up for a group, but regrettably, with this project I was naive and assumed the issue could be resolved, and when I realized it seemed unreasonable to try to join another group so late in the project.
 
 ## AIDAN KEEFE
 
+My contributions were creating the interface for the server and database. I assisted in brainstorming the idea for the website. I created the initial documentation. I also set up the docker portions of the project. If I could do this project again I would use redis and implement paging to handle more traffic.
 
 
 ## JACOB METZ
