@@ -67,7 +67,7 @@ My contributions were creating the interface for the server and database. I assi
 
 ## JACOB METZ
 
-
+For this project, I did an initial base of htmx and handled the UI using Tailwind CSS added via CDN making it super simple. I implemented utility classes to create the layout for the form, buttons, and overall page structure. If I worked on this project more I would refine the UI making it more visually appealing with a clearer color theme.
 
 ## THOMAS SIMONO
 
