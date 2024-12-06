@@ -1,4 +1,4 @@
-## Website featuring HTMX with Docker
+## Website featuring HTMX with Docker - Group 12
 
 ## AUTHORS
 
@@ -18,8 +18,9 @@ SQL/SQLite - Used to host the images on the server <br>
 ## RELEVANT LINKS
 
 Website hosted via Render - https://csci331-fall2024-project.onrender.com/ <br>
+Website hosted on Course Server - http://csci331vm.cs.montana.edu:3036/ <br>
 GitHub Repository - https://github.com/c0ffeecat/csci331-fall2024-project/tree/main <br>
-Google Slideshow - https://docs.google.com/presentation/d/13_D7vHj8hXmilwd302EJhkiSeTwmlbxr8-CkZfrrQLA/edit?usp=sharing
+Google Slideshow - https://docs.google.com/presentation/d/13_D7vHj8hXmilwd302EJhkiSeTwmlbxr8-CkZfrrQLA/edit?usp=sharing <br>
 
 ## STRUCTURE 
 
