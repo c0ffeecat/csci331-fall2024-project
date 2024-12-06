@@ -74,7 +74,7 @@ HTMX is a very effective and efficient tool for dynamically updating website dis
 
 ## REFERENCES
 
-https://www.sqlite.org/docs.html
-https://htmx.org/docs/
-https://docs.docker.com/
+SQLite Documentation - https://www.sqlite.org/docs.html <br>
+HTMX Documentation - https://htmx.org/docs/ <br>
+Docker Documentation - https://docs.docker.com/ <br>
 
