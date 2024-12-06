@@ -70,7 +70,7 @@ My main contributions to the website came from the documentation and the slidesh
 
 
 ## CONCLUSION
-HTMX is a very effective and efficient tool for dynamically updating website displays. SQLite acts as an easy-to-implement method for accessing and manipulating a Database on a server. Docker can be a very helpful tool for the development process, assuming users do not run into compatability issues. If attempting to use Docker, ensure that all members are able to use Docker. We also would have benefitted as a group from meeting up more, as sometimes the work felt disjointed or segmented poorly. Having a larger scope to give everyone a more dedicated task would have been beneficial as well.
+HTMX is a very effective and efficient tool for dynamically updating website displays. SQLite acts as an easy-to-implement method for accessing and manipulating a Database on a server. Docker can be a very helpful tool for the development process, assuming users do not run into compatability issues. If attempting to use Docker, ensure that all members are able to use Docker. We also would have benefitted as a group from meeting up more, as sometimes the work felt disjointed or segmented poorly. Having a larger scope to give everyone a more dedicated task would have been beneficial as well. Perhaps to expand the scope of the project, it could also handle Video upload such as MP4, and Audio upload such as MP3 or WAV.
 
 ## REFERENCES
 
