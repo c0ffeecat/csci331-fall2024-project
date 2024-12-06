@@ -6,7 +6,8 @@ Graham Boris, Aidan Keefe, Jacob Metz, Thomas Simono
 
 ## OVERVIEW
 
-This code is for a website which can be compiled into a Dockerimage from the Dockerfile and ran via Docker. The website utilizes SQLite to have a database of images which are shown on the website in order of upload. Images can be uploaded either via URL or direct file upload. Image upload and display is handled with HTMX.
+This code is for a website which can be compiled into a Dockerimage from the Dockerfile and ran via Docker. The website utilizes SQLite to have a database of images which are shown on the website in order of upload. Images can be uploaded either via URL or direct file upload. Image upload and display is handled with HTMX. <br>
+Note: The website does NOT keep a copy of websites uploaded via URL, but it stores the URLs themselves. The images will still be shown assuming external URLs remain valid.
 
 ## FEATURES
 
@@ -32,7 +33,7 @@ The website uses several files, but mainly the following:<br>
 
 ## CREATIVE OBJECTIVE
 
-Our objective was to create a website to which images could easily be uploaded and kept, and displayed on the site in order of upload. We wanted it to be able to handle both URL and direct file uploads. We also wanted it to be able to dynamically update rather than re-rendering the page, hence usage of HTMX. 
+Our objective was to create a website to which images and image URLs could easily be uploaded and kept, and displayed on the site in order of upload. We wanted it to be able to handle both URL and direct file uploads. We also wanted it to be able to dynamically update rather than re-rendering the page, hence usage of HTMX. 
 
 ## TECH SUMMARY - OVERVIEW
 
@@ -71,7 +72,7 @@ My main contributions to the website came from the documentation and the slidesh
 
 
 ## CONCLUSION
-HTMX is a very effective and efficient tool for dynamically updating website displays. SQLite acts as an easy-to-implement method for accessing and manipulating a Database on a server. Docker can be a very helpful tool for the development process, assuming users do not run into compatability issues. If attempting to use Docker, ensure that all members are able to use Docker. We also would have benefitted as a group from meeting up more, as sometimes the work felt disjointed or segmented poorly. Having a larger scope to give everyone a more dedicated task would have been beneficial as well. Perhaps to expand the scope of the project, it could also handle Video upload such as MP4, and Audio upload such as MP3 or WAV.
+HTMX is a very effective and efficient tool for dynamically updating website displays. SQLite acts as an easy-to-implement method for accessing and manipulating a Database on a server. Docker can be a very helpful tool for the development process, assuming users do not run into compatability issues. If attempting to use Docker, ensure that all members are able to use Docker. We also would have benefitted as a group from meeting up more, as sometimes the work felt disjointed or segmented poorly. Having a larger scope to give everyone a more dedicated task would have been beneficial as well. Perhaps to expand the scope of the project, it could also handle Video upload such as MP4, and Audio upload such as MP3 or WAV. An option to choose between hosting URL-uploaded images on the site or just the URLs themselves could also be useful. A progress bar could be added in the future, as well as some sort of pop-up showing that a file drop upload was successful/prompting users to click "Upload".
 
 ## REFERENCES
 
