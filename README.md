@@ -16,7 +16,7 @@ SQL/SQLite - Used to host the images on the server <br>
 
 ## RELEVANT LINKS
 
-GitHub Repository - https://github.com/c0ffeecat/csci331-fall2024-project/tree/main
+GitHub Repository - https://github.com/c0ffeecat/csci331-fall2024-project/tree/main <br>
 Google Slideshow - https://docs.google.com/presentation/d/13_D7vHj8hXmilwd302EJhkiSeTwmlbxr8-CkZfrrQLA/edit?usp=sharing
 
 ## STRUCTURE 
