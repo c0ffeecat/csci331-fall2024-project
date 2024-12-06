@@ -71,7 +71,7 @@ For this project, I did an initial base of htmx and handled the UI using Tailwin
 
 ## THOMAS SIMONO
 
-
+For this project I assisted in the scripting for the site feature, the attempt to host on the school server, and the documentation. Graham is right that we were a little disorganized as a group which led to difficulties balancing work. The idea for the technologies used in the site is good, however looking back there were struggles with docker and how we could host it on the school server. If I were to work on it again I would look further into making the site easier to setup.
 
 ## CONCLUSION
 HTMX is a very effective and efficient tool for dynamically updating website displays. SQLite acts as an easy-to-implement method for accessing and manipulating a Database on a server. Docker can be a very helpful tool for the development process, assuming users do not run into compatability issues. If attempting to use Docker, ensure that all members are able to use Docker. We also would have benefitted as a group from meeting up more, as sometimes the work felt disjointed or segmented poorly. Having a larger scope to give everyone a more dedicated task would have been beneficial as well. Perhaps to expand the scope of the project, it could also handle Video upload such as MP4, and Audio upload such as MP3 or WAV. An option to choose between hosting URL-uploaded images on the site or just the URLs themselves could also be useful. A progress bar could be added in the future, as well as some sort of pop-up showing that a file drop upload was successful/prompting users to click "Upload".
