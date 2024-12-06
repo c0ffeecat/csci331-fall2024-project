@@ -6,7 +6,7 @@ Graham Boris, Aidan Keefe, Jacob Metz, Thomas Simono
 
 ## OVERVIEW
 
-This code is for a website which can be compiled into a Dockerimage from the Dockerfile and ran via Docker. The website utilizes SQLite to have a database of images which are shown on the website in order of upload. Images can be uploaded either via URL or direct file upload.
+This code is for a website which can be compiled into a Dockerimage from the Dockerfile and ran via Docker. The website utilizes SQLite to have a database of images which are shown on the website in order of upload. Images can be uploaded either via URL or direct file upload. Image upload and display is handled with HTMX.
 
 ## FEATURES
 
